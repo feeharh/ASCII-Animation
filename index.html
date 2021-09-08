@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Animation Viewer</title>
+    <link rel="stylesheet" href="ascii.css" type="text/css">
+</head>
+<body>
+    <header> CS472: ASCII Animation Viewer</header>
+    <textarea name="textarea" id="txt" cols="80" rows="20"></textarea>
+    <br>
+    <div class="flex-container">
+        <div>
+            <fieldset class="fieldst">
+                <legend>Play Controls:</legend>
+                <button type="button">Start</button>
+                <button type="button">Stop</button>
+            </fieldset>        
+        </div>
+   
+        <div>
+            <fieldset class="fieldst">
+                <legend>Animation:</legend>
+                <select name="dropdown" id="drpdwn">
+                    <option value="blank">Blank</option>
+                </select>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset class="fieldst">
+                <legend>Size:</legend>
+                <select name="dropdown" id="drpdwn">
+                    <option value="medium">Medium</option>
+                </select>
+               
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset class="fieldst">
+                <legend>speed:</legend>
+                <input type="checkbox"> Turbo
+            </fieldset>
+        </div>
+</div>
+</body>
+</html>
