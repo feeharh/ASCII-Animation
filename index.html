@@ -1,50 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASCII Animation Viewer</title>
-    <link rel="stylesheet" href="ascii.css" type="text/css">
+    <title>ASCIImation</title>
+    <script src="ascii.js" type="text/javascript"></script>
+    <script src="animation.js" type="text/javascript"></script>
+    <link href="ascii.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <header> CS472: ASCII Animation Viewer</header>
-    <textarea name="textarea" id="txt" cols="80" rows="20"></textarea>
-    <br>
-    <div class="flex-container">
-        <div>
-            <fieldset class="fieldst">
-                <legend>Play Controls:</legend>
-                <button type="button">Start</button>
-                <button type="button">Stop</button>
-            </fieldset>        
-        </div>
-   
-        <div>
-            <fieldset class="fieldst">
-                <legend>Animation:</legend>
-                <select name="dropdown" id="drpdwn">
-                    <option value="blank">Blank</option>
-                </select>
-            </fieldset>
-        </div>
-
-        <div>
-            <fieldset class="fieldst">
-                <legend>Size:</legend>
-                <select name="dropdown" id="drpdwn">
-                    <option value="medium">Medium</option>
-                </select>
-               
-            </fieldset>
-        </div>
-
-        <div>
-            <fieldset class="fieldst">
-                <legend>speed:</legend>
-                <input type="checkbox"> Turbo
-            </fieldset>
-        </div>
+<div id="header">
+    <h2> CS472: ASCII Animation Viewer</h2>
+</div>
+<textarea id="textBox" rows="20" cols="80">
+        </textarea>
+<div id="textBoxDiv">
+    <fieldset>
+        <legend>Play Controls:</legend>
+        <button id="start"> Start</button>
+        <button id="stop">Stop</button>
+    </fieldset>
+    <fieldset>
+        <legend> Animation:</legend>
+        <select id="animation">
+            <option value="Blank">Blank</option>
+            <option value="Custom">Custom</option>
+            <option value="Exercise">Exercise</option>
+            <option value="Juggler">Juggler</option>
+            <option value="Bike">Bike</option>
+            <option value="Dive">Dive</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Size:</legend>
+        <select id="fontsize">
+            <option value="tiny">Tiny</option>
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+            <option value="extralarge">Extra Large</option>
+            <option value="xxl">XXL</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Speed:</legend>
+        <input type="checkbox" id="speed" name="Turbo"/>Turbo
+    </fieldset>
+</div>
+<div id="validator">
+    <a href="https://validator.w3.org/nu/?doc=https://anjumajoka.github.io/anjumajoka/gradesexercises/grades.html"><img
+            src="../images/w3c-html.jpg" alt="W3C-Html">
+    </a>
+    <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https://anjumajoka.github.io/anjumajoka/gradesexercises/stylegrade.css"><img
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!">
+    </a>
+    <a href="https://webster.cs.washington.edu/jslint/?referer">
+        <img src="../images/jsHint.png" alt="Valid JS" />
+    </a>
 </div>
 </body>
 </html>
